@@ -1,23 +1,23 @@
 import React from 'react'
 import './../component/Header.css'
+import { Link,NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <div className='Header'>
       <div className='container'>
         <div className='logo'>
-            <a href='#'>Movies</a>
+            <Link to={'/'}> Movies</Link>
         </div>
         <ul className='nav-links'>
             <li>
-            <a>WatchList</a>
+              <NavLink to={'/'} >WatchList</NavLink>  
+            </li>
+            <li>
+            <NavLink to={'/watched'} >Watched</NavLink> 
                 
             </li>
             <li>
-            <a>Watched</a>
-                
-            </li>
-            <li>
-            <a className='btn'> ADD</a>
+            <NavLink to={'/add'} className='btn'>ADD</NavLink> 
                 
             </li>
         </ul>
