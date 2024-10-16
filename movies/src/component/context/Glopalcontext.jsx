@@ -1,5 +1,6 @@
 
 import{Children, createcontext, useContext, useReducer} from 'react'
+import { reducer } from './reducer'
 
 const initalstate={
     watchlist:[],
